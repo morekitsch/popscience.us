@@ -1,0 +1,54 @@
+---
+const services = [
+    {
+        title: "Product Strategy",
+        description:
+            "Taking products from concept to launch. Defining strategy, prioritizing features, and shipping products that solve real problems.",
+    },
+    {
+        title: "AI/ML Implementation",
+        description:
+            "Strategy and execution for AI-powered products. Enterprise ML deployments and blockchain products that actually work.",
+    },
+    {
+        title: "Product Recovery",
+        description:
+            "Salvaging failed launches. Digging through archives, finding hidden gems, and rebuilding strategy around what matters.",
+    },
+    {
+        title: "UX Design",
+        description:
+            "Research-driven product decisions. User research, content strategies, and UX systems that align capabilities with needs.",
+    },
+    {
+        title: "Program Management",
+        description:
+            "Managing complex technical projects across distributed teams. Remote and hybrid. Keeping momentum without sacrificing quality.",
+    },
+];
+---
+
+<section id="services" class="px-6 py-16 lg:py-24 border-b-4 border-black">
+    <div class="max-w-7xl mx-auto">
+        <h2
+            class="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase mb-12 leading-[0.95] tracking-tight"
+        >
+            Services
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {
+                services.map((service) => (
+                    <div class="border-4 border-black p-8 bg-cream transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0_#0A0A0A]">
+                        <h3 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold uppercase mb-4 leading-tight border-l-8 border-orange pl-4">
+                            {service.title}
+                        </h3>
+                        <p class="text-base leading-relaxed">
+                            {service.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

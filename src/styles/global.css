@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-sans: Space Mono, monospace;
+    --font-display: Space Grotesk, sans-serif;
+
+    --color-cream: #fffef9;
+    --color-black: #0a0a0a;
+    --color-orange: #ff4500;
+    --color-gold: #ffd700;
+    --color-sand: #fff8dc;
+}
+
+html {
+    font-size: 14px; /* Default is 16px, this scales everything down ~12% */
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px; /* Slightly bigger on tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 14px; /* Full size on desktop */
+    }
+}
